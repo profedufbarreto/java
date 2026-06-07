@@ -1,12 +1,33 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== EXAMPLE 1: Objects with parameters (ready) =====");
+        Scanner teclado = new Scanner(System.in);
 
-        Car car1 = new Car("Toyota", "Corolla", 150000, 2020, 4, "Hybrid");
-        car1.showInfo();
+        System.out.println("===== ENTER DOG DATA =====");
 
-        System.out.println("===== Motorcycle ======");
-        Motorcycle moto = new Motorcycle("Honda", "CB 500", 25000, 2021, 500, false);
-        moto.showInfo();
+        Dog dog = new Dog();
+
+        System.out.println("Enter dog name: ");
+        String dogName = teclado.nextLine();
+        dog.setName(dogName);
+
+        System.out.println("Enter type (Dog): ");
+        String dogType = teclado.nextLine();
+        dog.setType(dogType);
+
+        System.out.println("Enter breed: ");
+        String dogBreed = teclado.nextLine();
+        dog.setBreed(dogBreed);
+
+        System.out.println("Enter age: ");
+        int dogAge = teclado.nextInt();
+        dog.setAge(dogAge);
+
+        dog.showInfo();
+
+        dog.fazerSom();
+
+        teclado.nextLine();
     }
 }

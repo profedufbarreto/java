@@ -20,13 +20,13 @@ public class Cat extends Animal {
 
     @Override
     public void fazerSom() {
-        System.out.println(this.getName() + "faz: Miaauuu!!");
+        System.out.println(this.getName() + " faz: Miaauuu!!");
     }
 
     @Override
     public void showInfo() {
         super.showInfo();
-        System.out.println("Breed: " = this.breed);
+        System.out.println("Breed: " + this.breed);
         System.out.println("====================");
     }
 }

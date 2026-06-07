@@ -20,7 +20,7 @@ public class Dog extends Animal {
 
     @Override
     public void fazerSom() {
-        System.out.println(this.getName() + "faz: Au au!");
+        System.out.println(this.getName() + " faz: Au au!");
     }
 
     @Override
