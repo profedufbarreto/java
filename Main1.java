@@ -4,13 +4,12 @@ public class Main1 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Digite a sua idade: ");
-        int idade = teclado.nextInt();
+        System.out.println("Você quer fazer a tabuada de qual número: ");
+        int tabuada = teclado.nextInt();
 
-        if (idade >= 18) {
-            System.out.println("Você é maior de idade!");
-        } else {
-            System.out.println("Você é menor de idade!");
+        for (int i = 0; i <= 10; i++) {
+            int resultado = tabuada * i;
+            System.out.println("O resultado de " + tabuada + " x " + i + " = " + resultado);
         }
 
         teclado.close();
