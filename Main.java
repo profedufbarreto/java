@@ -15,8 +15,13 @@ public class Main {
         System.out.println("Digite o ano do carro: ");
         carroUsuario.ano = teclado.nextInt();
 
-        System.out.println("\nCarro cadastrado com sucesso: ");
-        System.out.println(carroUsuario.marca + " " + carroUsuario.modelo + " " + carroUsuario.ano);
+        System.out.println("\n--- Dados do veículo ---");
+        carroUsuario.exibirDados();
+
+        carroUsuario.acelerar(50);
+        carroUsuario.acelerar(30);
+
+        teclado.close();
 
     }
 }
