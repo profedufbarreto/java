@@ -4,54 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("===== ENTER DOG DATA =====");
+        Carro carroUsuario = new Carro();
 
-        Dog dog = new Dog();
+        System.out.println("Digite a marca do carro: ");
+        carroUsuario.marca = teclado.nextLine();
 
-        System.out.println("Enter dog name: ");
-        String dogName = teclado.nextLine();
-        dog.setName(dogName);
+        System.out.println("Digite o modelo do carro: ");
+        carroUsuario.modelo = teclado.nextLine();
 
-        System.out.println("Enter type (Dog): ");
-        String dogType = teclado.nextLine();
-        dog.setType(dogType);
+        System.out.println("Digite o ano do carro: ");
+        carroUsuario.ano = teclado.nextInt();
 
-        System.out.println("Enter breed: ");
-        String dogBreed = teclado.nextLine();
-        dog.setBreed(dogBreed);
+        System.out.println("\nCarro cadastrado com sucesso: ");
+        System.out.println(carroUsuario.marca + " " + carroUsuario.modelo + " " + carroUsuario.ano);
 
-        System.out.println("Enter age: ");
-        int dogAge = teclado.nextInt();
-        dog.setAge(dogAge);
-
-        dog.showInfo();
-
-        dog.fazerSom();
-
-        teclado.nextLine();
-
-        System.out.println("\n===== ENTER CAT DATA =====");
-        Cat cat = new Cat();
-
-        System.out.println("Enter cat name: ");
-        String catName = teclado.nextLine();
-        cat.setName(catName);
-
-        System.out.println("Enter type (Cat): ");
-        String catType = teclado.nextLine();
-        cat.setType(catType);
-
-        System.out.println("Enter breed: ");
-        String catBreed = teclado.nextLine();
-        cat.setBreed(catBreed);
-
-        System.out.println("Enter age: ");
-        int catAge = teclado.nextInt();
-        cat.setAge(catAge);
-
-        cat.showInfo();
-        cat.fazerSom();
-
-        teclado.close();
     }
 }

@@ -1,31 +1,14 @@
 public class Pessoa {
-    private String nome;
-    private int idade;
 
-    public Pessoa(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
+    private String nome;
 
     public String getNome() {
+        System.out.println("Alguém está lendo o nome...");
         return nome;
     }
 
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setIdade(int idade) {
-        if (idade > 0) {
-            this.idade = idade;
-        }
-    }
-
-    public void exibir() {
-        System.out.println("Nome: " + nome + " | Idade: " + idade);
+    public void setNome(String novoNome) {
+        System.out.println("Alguém está mudando o nome..");
+        nome = novoNome;
     }
 }
